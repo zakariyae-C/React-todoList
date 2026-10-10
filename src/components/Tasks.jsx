@@ -37,7 +37,7 @@ export default function Tasks({selection}) {
       }}
     >
       <Box sx={{ flex: 1, textAlign: "start" }}>
-        <Typography sx={{ color: "text.main", fontSize: 22 }}>
+        <Typography sx={{ color: "text.main", fontSize: 22, textDecoration: t.isComplated ? "line-through" : "none" }}>
           {t.title}
         </Typography>
         <Typography sx={{ color: "text.light", fontSize: 14 }}>
